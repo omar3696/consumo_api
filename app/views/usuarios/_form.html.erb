@@ -1,0 +1,16 @@
+<!-- _form.html.erb -->
+<%= form_with model: @usuario, url: form_url, method: form_method do |f| %>
+  <div>
+    <%= f.label :nombre, 'Nombre' %><br>
+    <%= f.text_field :nombre %>
+  </div>
+
+  <div>
+    <%= f.label :correo, 'Email' %><br>
+    <%= f.email_field :email %>
+  </div>
+
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

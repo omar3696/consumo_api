@@ -1,0 +1,4 @@
+<!-- edit.html.erb -->
+<h1>Editar Usuario</h1>
+<%= render 'form', form_url: usuario_path(@usuario["id"]), form_method: :patch %>
+<%= link_to 'Volver a la lista', usuarios_path %>

@@ -1,0 +1,8 @@
+<h1>Detalles del Usuario</h1>
+
+<p><strong>Nombre:</strong> <%= @usuario["nombre"] %></p>
+<p><strong>Email:</strong> <%= @usuario["correo"] %></p>
+
+<%= link_to 'Editar', edit_usuario_path(@usuario["id"]) %> |
+<%= link_to 'Eliminar', usuario_path(@usuario["id"]), method: :delete, data: { confirm: '¿Estás seguro de eliminar este usuario?' } %> |
+<%= link_to 'Volver a la lista', usuarios_path %>
